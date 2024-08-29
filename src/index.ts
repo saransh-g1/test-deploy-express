@@ -2,7 +2,7 @@ import express from "express"
 const app = express()
 const PORT = 8000
 app.get('/', (req, res) => {
-  res.json('Hello World')
+  res.json({msg:"Hello World"})
 })
 app.get('/about', (req, res) => {
   res.send('About route 🎉 ')
