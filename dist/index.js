@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const PORT = 8000;
+console.log(process.env.URL);
 app.get('/', (req, res) => {
     res.json({ msg: "Hello World" });
 });
